@@ -37,7 +37,7 @@ def converteer_prijs(prijs):
 
 st.set_page_config(page_title="Prijs Calculator", layout="centered")
 
-CSV_MAP = "csv"
+CSV_MAP = "CSV"
 
 st.title("Prijs Calculator")
 
@@ -151,4 +151,5 @@ if st.button("Bereken prijs", use_container_width=True):
     except Exception as e:
 
         st.error("Deze maat bestaat niet in de tabel")
+
         st.error(f"Debug info: {e}")
